@@ -1,22 +1,27 @@
-// Coding challenge part 3
+// Coding challenge part 4
 
 // task 1
-function displayMessage(){
-    document.write("We in boys!");
+let car = {
+    name: 'Mercedes-Benz',
+    color: 'black',
+    price: 15900
 };
 
-//displayMessage();
+car.price = 17000;
+
+document.write(car.price);
 
 // task 2
-function square(num){
-    document.write(num*num);
+function sendMessage(){
+    document.write("We are in boys!");
 }
-
-//square(2);
 
 // task 3
-function addition(a,b,c){
-    document.write(a+b+c);
+let car2 = {
+    state: 'dafuq is this'
 }
 
-addition(1,2,3);
+function changeState(){
+    car2.state = 'did it change?';
+    document.write(car2.state);
+}
