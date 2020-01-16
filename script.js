@@ -1,13 +1,19 @@
 // Coding challenge part 5
+let x = "10";
+let y = 20;
 
-let message = "We are \"The gems\" of this century";
+x = Number(x);
 
-alert(message);
+alert(x+y);
 
-let messageLength = message.length;
+let favFruits = [
+    "Bannana",
+    "Apple",
+    "Orange",
+    "Watermelon",
+    "Lemon"
+];
 
-document.write(messageLength);
+alert(favFruits[1]);
 
-let messageUpper = message.toUpperCase();
-
-alert(messageUpper);
+favFruits.pop();
