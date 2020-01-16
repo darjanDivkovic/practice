@@ -1,18 +1,15 @@
-// Coding challenge part 5
-let product = {
-    category: "electronic",
-    price: 50
+// Coding challenge part 9
+
+let person = {
+
+    name: 'Dacija',
+    age: 21,
+    gender: 'male'
 };
 
-function discount(oldPrice){
-    return oldPrice - ( 0.1 * oldPrice );
+if( person.age <= 17 ){
+    alert(`${person.name} is an MINOR`);
 }
+else alert(`${person.name} is an ADULT`);
 
-if ( product.category === "electronic" || product.price > 100 ){
-    alert("You have been offered a discount");
-    alert(`OLD PRICE : ${product.price}`);
-    alert(`NEW PRICE : ${discount(product.price)}`);
-}
-else {
-    alert("No discounts are available.");
-}
+
