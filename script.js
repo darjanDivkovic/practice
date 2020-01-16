@@ -1,19 +1,18 @@
 // Coding challenge part 5
-let x = "10";
-let y = 20;
+let product = {
+    category: "electronic",
+    price: 50
+};
 
-x = Number(x);
+function discount(oldPrice){
+    return oldPrice - ( 0.1 * oldPrice );
+}
 
-alert(x+y);
-
-let favFruits = [
-    "Bannana",
-    "Apple",
-    "Orange",
-    "Watermelon",
-    "Lemon"
-];
-
-alert(favFruits[1]);
-
-favFruits.pop();
+if ( product.category === "electronic" || product.price > 100 ){
+    alert("You have been offered a discount");
+    alert(`OLD PRICE : ${product.price}`);
+    alert(`NEW PRICE : ${discount(product.price)}`);
+}
+else {
+    alert("No discounts are available.");
+}
