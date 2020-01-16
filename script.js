@@ -1,11 +1,13 @@
-// Coding challenge part 4
-let names = [
-    "Darjan",
-    "Boris",
-    "Mama",
-    "Smaja"
-];
+// Coding challenge part 5
 
-for(let i = 0 ; i < names.length ; i++){
-    document.write(names[i]);
-}
+let message = "We are \"The gems\" of this century";
+
+alert(message);
+
+let messageLength = message.length;
+
+document.write(messageLength);
+
+let messageUpper = message.toUpperCase();
+
+alert(messageUpper);
