@@ -1,15 +1,13 @@
-// Coding challenge part 9
+// Coding challenge part 10
 
-let person = {
-
-    name: 'Dacija',
-    age: 21,
-    gender: 'male'
-};
-
-if( person.age <= 17 ){
-    alert(`${person.name} is an MINOR`);
+for(let i = 0 ; i < 100 ; i++){
+    document.write(i+"<br>");
 }
-else alert(`${person.name} is an ADULT`);
 
+let x = 1;
 
+while(x <= 20){
+
+    document.write((x*x)+"<br>");
+    x++;
+}
