@@ -1,13 +1,39 @@
 // Coding challenge part 10
 
-for(let i = 0 ; i < 100 ; i++){
-    document.write(i+"<br>");
+let movie = {
+    name: "The pirates of the Caribean!",
+    rating: 3
 }
 
-let x = 1;
+function comment(movie){
 
-while(x <= 20){
+    alert(`I just watched ${movie.name}!`);
 
-    document.write((x*x)+"<br>");
-    x++;
-}
+    switch(movie.rating){
+        case 0 : 
+            alert("This joint sucks...");
+        break;
+
+        case 1 : 
+            alert("Have seen better than this");
+        break;
+
+        case 2 : 
+            alert("Its k.");
+        break;
+
+        case 3 : 
+            alert("not good, not bad");
+        break;
+
+        case 4 :
+            alert("This is a good movie!");
+        break;
+
+        case 5 :
+            alert("My new favourite movie y'all.");
+        break;
+    }
+};
+
+comment(movie);
