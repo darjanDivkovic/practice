@@ -1,0 +1,22 @@
+:root {
+    --darkblue: #2f2fa2;
+    --red: #f64c72;
+    --brownish: #553d67;
+    --grayish: #99738E;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkblue);
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#title {
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: center;
+}
