@@ -1,9 +1,23 @@
 // Regular expressions
 
-let pattern = /egg/i;
+let a = 200;
+let b = 0;
 
-let x = 'I ate an egg';
+try {
+    if(b === 0){
+        throw("B je nula...")
+    }
+    else {
+        alert(a/b);
+    }
+}
+catch(error){
+    alert(error);
+}
+finally{
+    alert("eto ga!");
+}
 
-x.replace(pattern,'apple');
 
-alert(x);
+
+
