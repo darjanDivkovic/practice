@@ -1,39 +1,9 @@
-// Coding challenge part 10
+// Regular expressions
 
-let movie = {
-    name: "The pirates of the Caribean!",
-    rating: 3
-}
+let pattern = /egg/i;
 
-function comment(movie){
+let x = 'I ate an egg';
 
-    alert(`I just watched ${movie.name}!`);
+x.replace(pattern,'apple');
 
-    switch(movie.rating){
-        case 0 : 
-            alert("This joint sucks...");
-        break;
-
-        case 1 : 
-            alert("Have seen better than this");
-        break;
-
-        case 2 : 
-            alert("Its k.");
-        break;
-
-        case 3 : 
-            alert("not good, not bad");
-        break;
-
-        case 4 :
-            alert("This is a good movie!");
-        break;
-
-        case 5 :
-            alert("My new favourite movie y'all.");
-        break;
-    }
-};
-
-comment(movie);
+alert(x);
