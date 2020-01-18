@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simple interest calculator.</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    </head>
+    <body>
+        <h1 id="title">Simple interest calculator</h1>
+
+        <div id="calculator-box">
+            <form>
+                <input v-model="principal" type="text" placeholder="Principal">
+                <br>
+                <input v-model="years" type="text" placeholder="Years">
+                <br>
+                <input v-model="rateOfInterest" type="text" placeholder="Rate of interest">
+                <br>
+                <button v-on:click="calculate" id="calculateButton" type="button">Calculate!</button>
+            </form>
+
+            <h1 id="result">RESULT : {{result}}  $</h1>
+        </div>
+
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
