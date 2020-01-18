@@ -7,13 +7,9 @@ let app = new Vue({
     },
 
     methods: {
-        inc: function(){
-            this.temp++;
-        },
-    
-        dec: function(){
-            this.temp--;
-        },
+       keypressed: function(){
+           console.log("keypressed!");
+       },
     },
 
 });
