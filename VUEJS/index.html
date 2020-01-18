@@ -7,17 +7,15 @@
     <body>
 
         <div id="app">
-            <h1>{{message}}</h1>
-            <p>Entered by: {{name}}</p>
 
-            <p>Previous price {{price}}</p>
-            <p>New price {{discount(200)}}</p>
+            <h1>Current temperature: {{temp}} C </h1>
 
-            <img v-bind:src="path" alt="daci">
+            <button v-on:click="inc">UP!</button>
+            
+            <button v-on:click="dec" >DOWN!</button>
 
-            <a v-bind:href="link">My git</a>
         </div>
-        
+       
         <script src="vueJSScript.js"></script>
     </body>
 </html>
