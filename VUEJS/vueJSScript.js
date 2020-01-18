@@ -6,7 +6,7 @@ let app = new Vue({
         name: "Dacija",
         price: 2000,
         path: 'https://images.unsplash.com/photo-1579338775661-7d0b8621ec83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        
+        link: 'www.github.com/darjanDivkovic',
     },
 
     methods: {
