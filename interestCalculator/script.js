@@ -4,7 +4,7 @@ button.addEventListener('click', calculateInterest);
 
 function calculateInterest(){
 
-    
+    document.getElementById('resultSpan').innerText = " ";
 
     let principal = parseInt(document.getElementById('principal').value);
     let years = parseInt(document.getElementById('years').value);
@@ -14,7 +14,7 @@ function calculateInterest(){
 
     let result = (principal * years * rateOfInteres) / 100;
 
-    resultNode = document.createTextNode(result)
+    let resultNode = document.createTextNode(result)
 
     document.getElementById('resultSpan').appendChild(resultNode);
     

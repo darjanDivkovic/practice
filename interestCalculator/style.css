@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--darkblue);
-
+    color: whitesmoke;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -51,6 +51,8 @@ input {
 input:focus {
     width: 350px;
     border: 2px solid var(--red);
+    color: white;
+    background: none;
 }
 
 button {
