@@ -3,11 +3,14 @@ let app = new Vue({
     el: '#app',
 
     data: {
-        text: false,
+        gates: false,
     },
 
     methods: {
-     
+        
+        useGates: function(){
+            this.gates = !this.gates;
+        }
      
     },
 

@@ -9,9 +9,9 @@
 
         <div id="app">
 
-          <h1 v-bind:class="{text:text}">We changing boys</h1>
+            <h1 v-if="gates">The gates are open!</h1>
 
-          <button v-on:click={text=!text}>here</button>  
+            <button v-on:click="useGates">UseGates</button>
 
         </div>
        
