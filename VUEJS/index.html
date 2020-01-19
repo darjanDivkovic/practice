@@ -11,7 +11,11 @@
 
             <h1 v-if="gates">The gates are open!</h1>
             <h1 v-else-if="!gates">The gates are closed!</h1>
-            <button v-on:click="useGates">UseGates</button>
+            
+            <button v-on:click="useGates">
+                <p v-if="gates">Close the gate!</p>
+                <p v-else-if="!gates">Open the gate!</p>
+            </button>
 
         </div>
        
