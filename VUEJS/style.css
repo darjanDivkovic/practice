@@ -1,5 +1,6 @@
 
 h1 {
+    
     color: #232323;
     font-size: 3em;
 }
@@ -8,3 +9,65 @@ h1 {
     color: blue;
     font-size: 2em;
 } 
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid black;
+    height: 110px;    
+
+}
+
+
+@keyframes move{
+    from {
+        left:39%;
+    }
+
+    to {
+        left:0%;
+    }
+}
+
+@keyframes move2{
+    from {
+        left:50%;
+    }
+
+    to {
+        left:88.5%;
+    }
+}
+
+#box1, #box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border: 2px solid #232323;
+    position: absolute;
+}
+
+#box1 {
+    left:39%;
+    
+}
+
+#box1:hover {
+    animation-name: move;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#box2:hover {
+    animation-name: move2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#box2 {
+    left:50%;
+   
+}
