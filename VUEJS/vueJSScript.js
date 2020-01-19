@@ -3,13 +3,12 @@ let app = new Vue({
     el: '#app',
 
     data: {
-        temp: 0,
+        text: false,
     },
 
     methods: {
-       keypressed: function(){
-           console.log("keypressed!");
-       },
+     
+     
     },
 
 });
