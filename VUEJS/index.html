@@ -10,9 +10,14 @@
         <div id="app">
 
             <div class="boxes">
-                <div id="box1"></div>
+                <div v-if="gates">
+                    <div v-bind id="box1"></div v-bind>
+                </div>
+                
                 <div id="box2"></div>
             </div>
+
+
 
             <h1 v-if="gates">The gates are open!</h1>
             <h1 v-else-if="!gates">The gates are closed!</h1>
