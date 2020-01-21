@@ -15,7 +15,7 @@ let app = new Vue({
 
     methods: {
         changePic : function(){
-            if(this.count != 3){
+            if(this.count != this.srces.length-1){
                 this.count++
             }
             else{
