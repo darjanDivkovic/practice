@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+
+    <body>
+
+        <div id="app">
+            <h1 v-for="player in players">{{player.name}}, {{player.sex}}</h1>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>
