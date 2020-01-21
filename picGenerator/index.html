@@ -2,15 +2,18 @@
 <html>
     <head>
         <title>Pic Generator</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Pic Generator</h1>
         <div id="Generator">
             <div class="inner">
-                <img class="contain" src="./img/pic2.jpg" alt="">
+                <img class="contain" v-bind:src="srces[count]">
             </div>
-            <button>change!</button>
+            <button v-on:click="changePic()">change!</button>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
