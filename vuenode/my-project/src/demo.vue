@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p v-for='person in ppl'>{{person}}</p>
+    <p id='para' v-for='person in ppl'>{{person}}</p>
   </div>
 </template>
 
@@ -17,5 +17,10 @@ export default {
 
 <style>
 
+#para {
+  font-size: 2.5em;
+  color: blue;
+  text-align: center;
+}
 
 </style>
