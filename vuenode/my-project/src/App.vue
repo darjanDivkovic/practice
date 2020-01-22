@@ -1,7 +1,9 @@
 <template>
+<div>
   <h1>{{ heading }}</h1>
+  <people></people>
+</div>
 </template>
-
 
 <script>
 export default {
