@@ -14,13 +14,13 @@ let generateRandom = function(){
 // myModule.doubleNumber(generateRandom());
 
 myModule.makeNumberPretty(generateRandom());
-*/
+
 
 let events = require('events');
 
 let emmiter = new events.EventEmitter();
 
-/*
+
 
 emmiter.on('nekoPoslaoPoruku', ()=> {
     console.log("Imate novu poruku!");
@@ -28,10 +28,24 @@ emmiter.on('nekoPoslaoPoruku', ()=> {
 
 emmiter.emit('nekoPoslaoPoruku');
 
-*/
+
 
 emmiter.on('ucitajPoruku', (message) => {
     console.log(message);
 }); 
 
 emmiter.emit('ucitajPoruku', 'Dje si brate');
+
+*/
+
+let fs = require('fs');
+
+let whatIRead = fs.readFileSync('textFile.txt');
+
+console.log(`What i read : ${whatIRead}...`);
+
+fs.writeFileSync('textFile.txt', 'We got some new boys in here!');
+
+whatIRead = fs.readFileSync('textFile.txt');
+
+console.log(`What i read the second time : ${whatIRead}...`);
