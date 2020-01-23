@@ -1,3 +1,4 @@
+/*
 let myModule = require('./myModule');
 
 let calculateSquare = function(number){
@@ -13,3 +14,24 @@ let generateRandom = function(){
 // myModule.doubleNumber(generateRandom());
 
 myModule.makeNumberPretty(generateRandom());
+*/
+
+let events = require('events');
+
+let emmiter = new events.EventEmitter();
+
+/*
+
+emmiter.on('nekoPoslaoPoruku', ()=> {
+    console.log("Imate novu poruku!");
+});
+
+emmiter.emit('nekoPoslaoPoruku');
+
+*/
+
+emmiter.on('ucitajPoruku', (message) => {
+    console.log(message);
+}); 
+
+emmiter.emit('ucitajPoruku', 'Dje si brate');
