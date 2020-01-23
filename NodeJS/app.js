@@ -51,7 +51,7 @@ whatIRead = fs.readFileSync('textFile.txt');
 
 console.log(`What i read the second time : ${whatIRead}...`);
 
-*/
+
 
 let fs = require('fs');
 
@@ -62,3 +62,14 @@ setTimeout(()=> {
     fs.rmdir('./src', ()=> console.log('directory deleted'));
 }, 3000);
 
+*/
+
+let http = require('http');
+
+let server = http.createServer((req, res)=>{
+
+    res.writeHead(200, {'Content-Type':'text'});
+    res.end('We are in boys!');
+});
+
+server.listen(8000,'127.0.0.1');
