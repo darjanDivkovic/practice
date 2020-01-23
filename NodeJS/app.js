@@ -1,9 +1,13 @@
+let doubleNumber = require('./myModule');
+
 let calculateSquare = function(number){
     return number * number;
 }
 
 let generateRandom = function(){
-    return Math.floor(Math.random()*10);
+    let generatedNumber = Math.floor(Math.random()*10);
+    console.log(`I generated the number ${generatedNumber}`);
+    return generatedNumber;
 }
 
-console.log(calculateSquare(generateRandom()));
+doubleNumber(generateRandom());
