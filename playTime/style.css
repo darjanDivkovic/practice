@@ -39,3 +39,15 @@ body {
     top: 200px;
     left: 100px;
 }
+
+#sphere {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: var(--purple);
+
+    top: 280px;
+    left: 300px;
+}
