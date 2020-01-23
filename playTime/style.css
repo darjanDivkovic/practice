@@ -4,8 +4,31 @@
     --rose : #FFB48F;
     --purple : #A64AC9; 
 }
+
 body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+}
+
+#container {
+    height: 96vh;
+    position: relative;
+}
+
+#triangle {
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid var(--yelow);
+
+    top: 460px;
+    left: 260px;
+}
+
+#sqaure {
+    
 }
