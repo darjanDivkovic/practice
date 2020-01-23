@@ -1,4 +1,4 @@
-let doubleNumber = require('./myModule');
+let myModule = require('./myModule');
 
 let calculateSquare = function(number){
     return number * number;
@@ -10,4 +10,6 @@ let generateRandom = function(){
     return generatedNumber;
 }
 
-doubleNumber(generateRandom());
+// myModule.doubleNumber(generateRandom());
+
+myModule.makeNumberPretty(generateRandom());
