@@ -36,7 +36,8 @@ emmiter.on('ucitajPoruku', (message) => {
 
 emmiter.emit('ucitajPoruku', 'Dje si brate');
 
-*/
+
+
 
 let fs = require('fs');
 
@@ -49,3 +50,15 @@ fs.writeFileSync('textFile.txt', 'We got some new boys in here!');
 whatIRead = fs.readFileSync('textFile.txt');
 
 console.log(`What i read the second time : ${whatIRead}...`);
+
+*/
+
+let fs = require('fs');
+
+
+fs.mkdir('src', ()=> console.log('directory created'));
+
+setTimeout(()=> {
+    fs.rmdir('./src', ()=> console.log('directory deleted'));
+}, 3000);
+
