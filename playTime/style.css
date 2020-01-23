@@ -1,0 +1,11 @@
+:root {
+    --lblue : #17E9E0;
+    --yelow : #FCCD04;
+    --rose : #FFB48F;
+    --purple : #A64AC9; 
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
