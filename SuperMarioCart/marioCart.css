@@ -9,10 +9,24 @@ body {
     width: 100%;
 }
 
-#cloud {
-    height: 100px;
+#cloud1 {
+    height: 70px;
+    height: 150px;
     margin-top: 80px;
     margin-left: 500px;
+    animation-name: flyby;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flyby {
+    from {
+        margin-left: 800px;
+    }
+    to {
+        margin-left: -200px;
+    }
 }
 
 h1 {
@@ -22,22 +36,22 @@ h1 {
     font-size: 7em;
     text-transform: uppercase;
     position: absolute;
-    color: white;
+    color: #37474f;
     word-break: break-all;
 }
 
 #grass {
-    background-color: green;
+    background-color: #43a047;
     height: 190px;
     width: 100%;
 }
 
 #road {
     position: relative;
-    background-color: lightslategray;
-    border-top: 5px solid lightsteelblue;
-    border-bottom: 5px solid lightsteelblue;
-    height: 250px;
+    background-color: #37474f;
+    border-top: 7px solid lightsteelblue;
+    border-bottom: 7px solid lightsteelblue;
+    height: 246px;
     width: 100%;
 }
 
