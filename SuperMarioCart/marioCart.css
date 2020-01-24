@@ -22,6 +22,7 @@ body {
 }
 
 #road {
+    position: relative;
     background-color: lightslategray;
     border-top: 5px solid lightsteelblue;
     border-bottom: 5px solid lightsteelblue;
@@ -38,9 +39,9 @@ body {
 
 #mario {
 
-    margin-top: 20px;
+    top: -30px;
     position: absolute;
-    height: 90px;
-    width: 90px;
+    height: 100px;
+    width: 100px;
     
 }
