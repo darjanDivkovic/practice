@@ -44,8 +44,9 @@ body {
     height: 100px;
     width: 100px;
     animation-name: drive;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes drive {
@@ -55,4 +56,15 @@ body {
     to {
         transform: translateX(900px);
     }
+}
+
+#luigi {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 85px;
+    animation-name: drive;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.84,.63,.32,1.42);
 }
