@@ -43,5 +43,16 @@ body {
     position: absolute;
     height: 100px;
     width: 100px;
-    
+    animation-name: drive;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(900px);
+    }
 }
