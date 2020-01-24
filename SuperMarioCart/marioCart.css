@@ -10,14 +10,15 @@ body {
 }
 
 #cloud1 {
-    height: 70px;
+   
+    position: absolute;
     height: 150px;
-    margin-top: 80px;
-    margin-left: 500px;
+    top: 30px;
     animation-name: flyby;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
 }
 
 @keyframes flyby {
@@ -27,6 +28,43 @@ body {
     to {
         margin-left: -200px;
     }
+}
+
+#cloud2 {
+    
+    position: absolute;
+    height: 90px;
+    width: 120px;
+    top: 240px;
+    animation-name: flyby;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#cloud3 {
+
+    position: absolute;
+    height: 90px;
+    width: 120px;
+    top: -30px;
+    animation-name: flyby;
+    animation-duration: 2.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#cloud4 {
+
+    position: absolute;
+    height: 120px;
+    width: 250px;
+    top: 150px;
+    animation-name: flyby;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
 }
 
 h1 {
