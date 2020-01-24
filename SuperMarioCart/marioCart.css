@@ -9,6 +9,12 @@ body {
     width: 100%;
 }
 
+#cloud {
+    height: 100px;
+    margin-top: 80px;
+    margin-left: 500px;
+}
+
 #grass {
     background-color: green;
     height: 190px;
@@ -31,6 +37,7 @@ body {
 }
 
 #mario {
+
     margin-top: 20px;
     position: absolute;
     height: 90px;
