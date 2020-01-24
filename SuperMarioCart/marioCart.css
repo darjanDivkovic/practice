@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#sky {
+    background-color: skyblue;
+    height: 340px;
+    width: 100%;
+}
+
+#grass {
+    background-color: green;
+    height: 190px;
+    width: 100%;
+}
+
+#road {
+    background-color: lightslategray;
+    border-top: 5px solid lightsteelblue;
+    border-bottom: 5px solid lightsteelblue;
+    height: 250px;
+    width: 100%;
+}
+
+#lines {
+    
+    border: 5px dashed whitesmoke;
+    margin-top: 110px;
+
+}
