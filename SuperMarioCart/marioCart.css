@@ -29,3 +29,11 @@ body {
     margin-top: 110px;
 
 }
+
+#mario {
+    margin-top: 20px;
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    
+}
