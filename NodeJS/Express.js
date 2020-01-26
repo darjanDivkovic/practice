@@ -1,6 +1,8 @@
 let express = require('express');
 
 let app = express();
+app.set('view engine', 'ejs');
+
 
 app.get('/', (req,res)=> {
     res.send('Boys are on the homepage! yaiks');
@@ -17,7 +19,8 @@ app.get('/profile', (req,res)=> {
 });
 
 app.get('/posts/:id', (req,res)=> {
-    res.send('This is post : '+ req.params.id);
+    
+    res.render('blog', {'blog_post':req.params.id});
 })
 
 app.listen(3000);
