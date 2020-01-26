@@ -78,3 +78,14 @@ emmiter.on('readFile', ()=> {
 emmiter.emit('readFile');
 
 */
+
+let http = require('http');
+
+let server = http.createServer((req,res)=> {
+
+    res.writeHead(200,{'Content-Type':'text/plain'});
+    res.end('We are in boiiiis!');
+
+});
+
+server.listen(3000);
