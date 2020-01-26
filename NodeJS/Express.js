@@ -16,4 +16,8 @@ app.get('/profile', (req,res)=> {
     res.send('Boys checking the profile page');
 });
 
+app.get('/posts/:id', (req,res)=> {
+    res.send('This is post : '+ req.params.id);
+})
+
 app.listen(3000);
