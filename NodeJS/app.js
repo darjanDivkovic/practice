@@ -64,12 +64,17 @@ setTimeout(()=> {
 
 */
 
-let http = require('http');
+/*
 
-let server = http.createServer((req, res)=>{
+let myModule = require('./myModule');
+let events = require('events');
+let emmiter = new events.EventEmitter();
 
-    res.writeHead(200, {'Content-Type':'text'});
-    res.end('We are in boys!');
+
+emmiter.on('readFile', ()=> {
+    console.log(myModule.readFile());
 });
 
-server.listen(8000,'127.0.0.1');
+emmiter.emit('readFile');
+
+*/

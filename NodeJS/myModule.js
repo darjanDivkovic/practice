@@ -1,10 +1,9 @@
-let doubleNumber = function(number){
-    console.log(`Number after doubling ${number * 2}`);
-}
+let fs = require('fs');
 
-let makeNumberPretty = function(number){
-    console.log(`Here i made it pretty -> **${number}**`);
-}
+let readFile = ()=> {
+    return fs.readFileSync('readMe.txt','utf-8');
+};
 
-module.exports.doubleNumber = doubleNumber;
-module.exports.makeNumberPretty = makeNumberPretty;
+module.exports.readFile = readFile;
+
+
