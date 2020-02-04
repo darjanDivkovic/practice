@@ -17,8 +17,8 @@ body {
     left: 0;
     z-index: 2;
     cursor: pointer;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     opacity: 0;
 }
 
@@ -66,4 +66,14 @@ body {
 /* Toggler animate */
 .menu-wrap .toggler:checked + .hamburger > div {
     transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
 }
