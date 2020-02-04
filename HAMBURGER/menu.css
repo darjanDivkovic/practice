@@ -21,9 +21,9 @@
     align-items: center;
     position: relative;
     top: 300px;
-    animation: forwards;
+    animation: linear;
     animation-name: fly;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
