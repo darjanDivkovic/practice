@@ -77,3 +77,24 @@ body {
 .menu-wrap .toggler:checked:hover + .hamburger > div {
     transform: rotate(225deg);
 }
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu > div {
+    background: #232323;
+    border-radius: 50%;
+    display: flex;
+    flex: none;
+    width: 200vw;
+    height: 200vw;
+}
